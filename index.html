@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./script.js"></script>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-    <h1>Creating Tic-Tak-Game</h1>
+    <h1>Tic Tak Toe </h1>
+    <table>
+        <tr>
+         <td class = "cell" onclick="playerMove(this)"></td>
+         <td class = "cell" onclick="playerMove(this)"></td>
+         <td class = "cell" onclick="playerMove(this)"></td>
+        </tr>
+
+        <tr>
+         <td class = "cell" onclick="playerMove(this)"></td>
+         <td class = "cell" onclick="playerMove(this)"></td>
+         <td class = "cell" onclick="playerMove(this)"></td>
+        </tr>
+
+        <tr>
+         <td class = "cell" onclick="playerMove(this)"></td>
+         <td class = "cell" onclick="playerMove(this)"></td>
+         <td class = "cell" onclick="playerMove(this)"></td>
+        </tr>
+    </table>
+
+    <div id="player-turn">Now it is the turn of 'X'</div>
+    <div id="result"> </div>
+    <button onclick="restartGame()">Reset game </button>
 </body>
 </html>
